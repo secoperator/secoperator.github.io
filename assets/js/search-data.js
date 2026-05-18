@@ -27,6 +27,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/modern-v8-exploitation-intro/";
           
         },
+      },{id: "post-anatomía-de-la-creación-de-procesos-en-android-del-kernel-a-zygote-y-app-process",
+        
+          title: "Anatomía de la creación de procesos en Android: del kernel a Zygote y...",
+        
+        description: "Walkthrough técnico y detallado del ciclo completo de creación de un proceso en Android, desde fork() en el kernel Linux hasta el bootstrap de una aplicación a través de Zygote y app_process.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/android-process-creation/";
+          
+        },
       },{id: "post-lpe-a-root-en-android-introducción-y-cronología-de-vulnerabilidades",
         
           title: "LPE a root en Android: introducción y cronología de vulnerabilidades",
