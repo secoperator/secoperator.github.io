@@ -27,6 +27,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/modern-v8-exploitation-intro/";
           
         },
+      },{id: "post-lpe-a-root-en-android-introducción-y-cronología-de-vulnerabilidades",
+        
+          title: "LPE a root en Android: introducción y cronología de vulnerabilidades",
+        
+        description: "Panorama y cronología de Local Privilege Escalation hasta root en Android, incluyendo bugs del kernel Linux que también impactan a dispositivos Android.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/android-lpe-root/";
+          
+        },
       },{
         id: 'social-rss',
         title: 'RSS Feed',
