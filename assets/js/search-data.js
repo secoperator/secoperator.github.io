@@ -49,6 +49,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/android-lpe-root/";
           
         },
+      },{id: "post-seandroid-y-seccomp-anatomía-del-sandboxing-en-android-desde-el-kernel-hasta-el-userland",
+        
+          title: "SEAndroid y seccomp: anatomía del sandboxing en Android desde el kernel hasta el...",
+        
+        description: "Análisis técnico profundo y state-of-the-art sobre el funcionamiento de SEAndroid (Mandatory Access Control basado en SELinux) y seccomp-bpf en Android: arquitectura, hooks LSM, AVC, cBPF, Zygote, política CIL, BPF-LSM, SECCOMP_USER_NOTIF y vectores de evasión recientes.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/seandroid-seccomp-deep-dive/";
+          
+        },
       },{
         id: 'social-rss',
         title: 'RSS Feed',
