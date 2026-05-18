@@ -2,33 +2,39 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <strong>Vulnerability research</strong> · browser internals · exploit development
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Notes from the trenches of</p>
+    <p>JavaScript engine internals,</p>
+    <p>memory corruption & sandboxing.</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+This site is a public lab notebook on **offensive security research**, with a heavy bias toward what runs JavaScript in your browser: **V8**, its sandbox, its trust boundaries and the tooling around it.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+You will find notes on:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- **JIT compilers and runtime internals** — TurboFan, Maglev, Sparkplug, deoptimization, speculative optimization bugs.
+- **Modern memory models** — the V8 heap cage, pointer compression, the trusted space and the V8 sandbox attacker model.
+- **Lab tooling** — building `d8` from source, useful runtime flags, tracing optimization, capturing logs and reproducers.
+- **Exploit primitives** — addrof / fakeobj, arbitrary read/write, sandbox escapes via WebAssembly, JIT spraying, and renderer → broker pivots.
+- **Fuzzing infrastructure** — coverage-guided JS fuzzers, grammar-based generation, differential testing.
+
+Everything here is intended for **defensive research, CTF play and educational purposes**. Pointers to upstream commits, CVE writeups and trusted external references are preferred over hand-waving.
